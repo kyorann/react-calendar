@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'ui';
+
+//MAIN GRID
+
+@aside: 15%;
+@main-block: 100%-@aside;
+
+body {
+  font-family: @font-family;
+}
+
+.side-block {
+  flex-basis: @aside;
+}
+
+.main-block {
+  flex-basis: @main-block;
+}
+
+.calendar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar__controls {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.calendar__header {
+  flex-basis: @aside;
+  justify-content: center;
+  text-align: center;
+}
+
+.controls {
+  padding: 0 20px;
+}
