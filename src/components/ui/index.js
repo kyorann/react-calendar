@@ -1,4 +1,4 @@
 import Button from './buttons/Button'
-import CalendarControls from './calendar/CalendarControls'
+import {CalendarControls, MonthView, CalendarBody} from './calendar'
 
-export {Button,CalendarControls}
+export {Button, CalendarControls, MonthView, CalendarBody}

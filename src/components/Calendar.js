@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {CalendarControls} from './ui'
+import {CalendarControls, CalendarBody} from './ui'
 
 
 class Calendar extends Component {
@@ -18,7 +18,7 @@ class Calendar extends Component {
 
         </div>
         <div className='main-block'>
-
+          <CalendarBody/>
         </div>
       </div>
     )
