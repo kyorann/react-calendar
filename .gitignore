@@ -1,4 +1,5 @@
-.idea/
+
+/.idea/
 node_modules/
 dist/
 build/
@@ -7,3 +8,4 @@ npm-debug.log
 dev/
 */.DS_Store
 /node_modules/
+.idea/

@@ -1,8 +1,14 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {WEEK_DAYS} from '../../../constants'
+import {getDaysOffset, getDaysNumber} from '../../../utils'
 
 class MonthView extends Component {
+
+  componentDidMount() {
+    console.log('OFFSET IS ================>', getDaysOffset(), ' DAYS')
+    console.log('THIS MONTH CONTAINS==================>', getDaysNumber(), ' DAYS')
+  }
 
   _renderTableHeader = arr => {
     return arr.map(item => {
@@ -11,8 +17,14 @@ class MonthView extends Component {
   }
   _renderTableBody = () => {
     const arr = []
-    for (let x = 0; x <= 34; x++) {
-      arr.push(<div className='td month__day'>{x + 1}</div>)
+    const now = new Date()
+    const offset = getDaysOffset()
+    const prevMonthDays = new Date(now.getFullYear(), now.getMonth(), 0).getDate()
+    console.log('PREVIOUS MONTH CONTAINS===========>', prevMonthDays, ' DAYS')
+    for (let x = 1; x <=35; x++) {
+        if(x<offset){
+
+        }
     }
     return arr
   }
